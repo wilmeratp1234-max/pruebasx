@@ -1377,304 +1377,319 @@
         let distribuidorAutorizado = false;
 
         const baseDeDatosPrecios = {
-            "google one": {
-                categoria: "otros",
-                tab1Nombre: "Planes Almacenamiento",
-                tab2Nombre: "Cuentas",
-                idLabel: "CORREO DE TU CUENTA GOOGLE",
-                idPlaceholder: "Ingresa el correo de tu cuenta Google",
-                paquetesTab1: [
-                    { monto: "30 GB", extra: "1 Mes", precioUSD: 2.00, active: true },
-                    { monto: "100 GB", extra: "1 Mes", precioUSD: 3.50 },
-                    { monto: "200 GB", extra: "1 Mes", precioUSD: 5.00 },
-                    { monto: "2 TB", extra: "1 Mes", precioUSD: 14.99 }
-                ],
-                paquetesTab2: [
-                    { monto: "2 TB", extra: "1 Mes", precioUSD: 14.99 }
-                ]
-            },
-            "monedas tiktok": {
-                categoria: "otros",
-                tab1Nombre: "Paquetes de Monedas",
-                tab2Nombre: "Recargas Directas",
-                idLabel: "USUARIO O ID DE TIKTOK",
-                idPlaceholder: "Ingresa tu usuario (@ejemplo)",
-                paquetesTab1: [
-                    { monto: "70 Monedas", extra: "Directas", precioUSD: 1.00, active: true },
-                    { monto: "210 Monedas", extra: "Directas", precioUSD: 2.90 },
-                    { monto: "630 Monedas", extra: "Directas", precioUSD: 8.50 },
-                    { monto: "1190 Monedas", extra: "Directas", precioUSD: 15.99 }
-                ],
-                paquetesTab2: [
-                    { monto: "1190 Monedas", extra: "Directas", precioUSD: 15.99 }
-                ]
-            },
-            "estrellas telegram": {
-                categoria: "otros",
-                tab1Nombre: "Estrellas & Premium",
-                tab2Nombre: "Suscripción",
-                idLabel: "USUARIO DE TELEGRAM",
-                idPlaceholder: "Ingresa tu usuario (@ejemplo)",
-                paquetesTab1: [
-                    { monto: "100 Estrellas", extra: "Telegram", precioUSD: 2.60, active: true },
-                    { monto: "250 Estrellas", extra: "Telegram", precioUSD: 6.25 },
-                    { monto: "500 Estrellas", extra: "Telegram", precioUSD: 12.40 },
-                    { monto: "Telegram Premium", extra: "Suscripción", precioUSD: 7.50 }
-                ],
-                paquetesTab2: [
-                    { monto: "Telegram Premium", extra: "Suscripción", precioUSD: 7.50 }
-                ]
-            },
-            "netflix": {
-                categoria: "streaming",
-                tab1Nombre: "Planes Principales",
-                tab2Nombre: "Cuentas",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Con código de Viaje", precioUSD: 4.00, active: true },
-                    { monto: "1 Pantalla", extra: "Personalizada", precioUSD: 5.00 },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "Ilimitada", precioUSD: 14.99 }
-                ]
-            },
-            "disney+ premium": {
-                categoria: "streaming",
-                tab1Nombre: "Planes Pantallas",
-                tab2Nombre: "Cuentas Completa",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "ESPN Incluido", precioUSD: 3.50, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "4K UHD", precioUSD: 15.00 }
-                ]
-            },
-            "prime video": {
-                categoria: "streaming",
-                tab1Nombre: "Opciones de Pantalla",
-                tab2Nombre: "Cuenta Completa",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Full HD", precioUSD: 1.40, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "Privada", precioUSD: 5.00 }
-                ]
-            },
-            "hbo max standar": {
-                categoria: "streaming",
-                tab1Nombre: "Pantallas",
-                tab2Nombre: "Cuentas",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Standar", precioUSD: 2.00, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "Privada", precioUSD: 5.50 }
-                ]
-            },
-            "crunchyroll": {
-                categoria: "streaming",
-                tab1Nombre: "Mega Fan",
-                tab2Nombre: "Cuenta Completa",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Mega Fan", precioUSD: 1.20, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "Anual / Mensual", precioUSD: 5.00 }
-                ]
-            },
-            "paramount+": {
-                categoria: "streaming",
-                tab1Nombre: "Planes",
-                tab2Nombre: "Cuentas",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Full HD", precioUSD: 2.00, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "VIP", precioUSD: 5.50 }
-                ]
-            },
-            "vix": {
-                categoria: "streaming",
-                tab1Nombre: "Planes Premium",
-                tab2Nombre: "Cuentas",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Deportes & Novelas", precioUSD: 1.20, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "Privada", precioUSD: 4.50 }
-                ]
-            },
-            "appletv": {
-                categoria: "streaming",
-                tab1Nombre: "Opciones de Servicio",
-                tab2Nombre: "Cuentas",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Apple Originals", precioUSD: 1.50, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "Original", precioUSD: 4.50 }
-                ]
-            },
-            "universal+": {
-                categoria: "streaming",
-                tab1Nombre: "Planes",
-                tab2Nombre: "Cuentas",
-                idLabel: "NOMBRE PARA LA PANTALLA",
-                idPlaceholder: "Ingresa el nombre para tu pantalla",
-                paquetesTab1: [
-                    { monto: "1 Pantalla", extra: "Universal Channels", precioUSD: 1.50, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Completa", extra: "Privada", precioUSD: 5.00 }
-                ]
-            },
-            "spotify premium": {
-                categoria: "musica",
-                tab1Nombre: "Suscripción a tu correo",
-                tab2Nombre: "Planes Largos",
-                idLabel: "CORREO DE TU CUENTA SPOTIFY",
-                idPlaceholder: "Ingresa el correo de tu cuenta Spotify",
-                paquetesTab1: [
-                    { monto: "A tu correo", extra: "1 Mes", precioUSD: 5.00, active: true },
-                ],
-                paquetesTab2: [
-                    { monto: "A tu correo", extra: "3 Meses", precioUSD: 15.00 }
-                ]
-            },
-            "youtube premium": {
-                categoria: "musica",
-                tab1Nombre: "Individual",
-                tab2Nombre: "Renovable",
-                idLabel: "CORREO DE TU CUENTA YOUTUBE",
-                idPlaceholder: "Tu correo para invitarte al plan",
-                paquetesTab1: [
-                    { monto: "1 Mes", extra: "Renovable", precioUSD: 4.00, active: true }
-                ],
-                paquetesTab2: [
-                    { monto: "12 Mes", extra: "Renovable", precioUSD: 25.00 }
-                ]
-            },
-            "capcut": {
-                categoria: "herramientas",
-                tab1Nombre: "Planes Pro",
-                tab2Nombre: "Suscripción",
-                idLabel: "CORREO DE CONTACTO",
-                idPlaceholder: "Tu correo electrónico",
-                paquetesTab1: [
-                    { monto: "1 Mes", extra: "No Renovable", precioUSD: 6.50, active: true }
-                ],
-                paquetesTab2: [
-                    { monto: "1 Mes", extra: "No Renovable", precioUSD: 6.50 }
-                ]
-            },
-            "streamix tv": {
-                categoria: "iptv",
-                tab1Nombre: "Suscripciones IPTV",
-                tab2Nombre: "Ofertas Especiales",
-                idLabel: "NOMBRE O DISPOSITIVO",
-                idPlaceholder: "Ej: Smart TV / Mi Nombre",
-                paquetesTab1: [
-                    { monto: "1 Mes de Servicio", extra: "1800+ Canales", precioUSD: 2.50, active: true },
-                    { monto: "3 Meses", extra: "Oferta", precioUSD: 6.00 },
-                ],
-                paquetesTab2: [
-                    { monto: "6 Meses", extra: "Oferta", precioUSD: 9.50 },
-                    { monto: "12 Meses", extra: "VIP", precioUSD: 14.50 }
-                ]
-            },
-            "flujotv": {
-                categoria: "iptv",
-                tab1Nombre: "Planes FlujoTV",
-                tab2Nombre: "Promociones Extra",
-                idLabel: "NOMBRE O DISPOSITIVO",
-                idPlaceholder: "Ej: Firestick / Mi Nombre",
-                paquetesTab1: [
-                    { monto: "1 Mes de Servicio", extra: "Estándar", precioUSD: 3.00, active: true },
-                    { monto: "3 Meses", extra: "Pack", precioUSD: 8.00 },
-                ],
-                paquetesTab2: [
-                    { monto: "6 Meses + 1", extra: "Combo", precioUSD: 17.00 },
-                    { monto: "12 Meses + 2", extra: "Anual Mega", precioUSD: 36.00 }
-                ]
-            },
-            "canva pro edu": {
-                categoria: "herramientas",
-                tab1Nombre: "Planes a tu Correo",
-                tab2Nombre: "Suscripciones Anuales",
-                idLabel: "CORREO DE TU CUENTA CANVA",
-                idPlaceholder: "Correo donde recibirás la invitación Pro",
-                paquetesTab1: [
-                    { monto: "Cuenta Pro", extra: "1 Mes A tu correo", precioUSD: 1.50, active: true },
-                    { monto: "Cuenta Pro", extra: "3 Meses A tu correo", precioUSD: 3.00 },
-                    { monto: "Cuenta Pro", extra: "6 Meses A tu correo", precioUSD: 5.50 },
-                ],
-                paquetesTab2: [
-                    { monto: "Cuenta Pro", extra: "12 Meses A tu correo", precioUSD: 10.00 }
-                ]
-            },
-            "free fire": {
-                categoria: "juegos",
-                tab1Nombre: "Diamantes",
-                tab2Nombre: "Paquetes",
-                idLabel: "ID DEL JUGADOR / CORREO DE LA CUENTA",
-                idPlaceholder: "Ingresa tu ID o Correo",
-                paquetesTab1: [
-                    { monto: "100", extra: "+ 10 Extra", precioUSD: 1.10 },
-                    { monto: "310", extra: "+ 31 Extra", precioUSD: 3.40, active: true },
-                    { monto: "520", extra: "+ 52 Extra", precioUSD: 5.50 },
-                    { monto: "1060", extra: "+ 106 Extra", precioUSD: 10.30 },
-                    { monto: "2180", extra: "+ 218 Extra", precioUSD: 19.99 },
-                    { monto: "5600", extra: "+ 560 Extra", precioUSD: 39.99 }
-                ],
-                paquetesTab2: [
-                    { monto: "Pase Semanal", extra: "VIP", precioUSD: 2.20 },
-                    { monto: "Pase Mensual", extra: "Top", precioUSD: 10.50 }
-                ]
-            },
-            "blood strike": {
-                categoria: "juegos",
-                tab1Nombre: "Oro / Pases",
-                tab2Nombre: "Paquetes",
-                idLabel: "ID DEL JUGADOR / CORREO DE LA CUENTA",
-                idPlaceholder: "Ingresa tu ID o Correo",
-                paquetesTab1: [
-                    { monto: "100 Oro", extra: "Básico", precioUSD: 0.00, active: true },
-                    { monto: "500 Oro", extra: "Extra", precioUSD: 0.00 }
-                ],
-                paquetesTab2: [
-                    { monto: "Pase de Batalla", extra: "Pro", precioUSD: 0.00 }
-                ]
-            },
-            "mobile legends": {
-                categoria: "juegos",
-                tab1Nombre: "Diamantes",
-                tab2Nombre: "Pases",
-                idLabel: "ID DEL JUGADOR / CORREO DE LA CUENTA",
-                idPlaceholder: "Ingresa tu ID o Correo",
-                paquetesTab1: [
-                    { monto: "86 Diamantes", extra: "Fast", precioUSD: 0.00, active: true },
-                    { monto: "257 Diamantes", extra: "Pack", precioUSD: 0.00 }
-                ],
-                paquetesTab2: [
-                    { monto: "Pase Semanal", extra: "Bonus", precioUSD: 0.00 }
-                ]
-            },
-            "call of duty mobile": {
+    "google one": {
+        categoria: "otros",
+        tab1Nombre: "Planes Almacenamiento",
+        tab2Nombre: "Cuentas",
+        idLabel: "CORREO DE TU CUENTA GOOGLE",
+        idPlaceholder: "Ingresa el correo de tu cuenta Google",
+        paquetesTab1: [
+            { monto: "30 GB", extra: "1 Mes", precioUSD: 2.00, active: true },
+            { monto: "100 GB", extra: "1 Mes", precioUSD: 3.50 },
+            { monto: "200 GB", extra: "1 Mes", precioUSD: 5.00 },
+            { monto: "2 TB", extra: "1 Mes", precioUSD: 14.99 }
+        ],
+        paquetesTab2: [
+            { monto: "2 TB", extra: "1 Mes", precioUSD: 14.99 }
+        ]
+    },
+    "monedas tiktok": {
+        categoria: "otros",
+        tab1Nombre: "Paquetes de Monedas",
+        tab2Nombre: "Recargas Directas",
+        idLabel: "USUARIO O ID DE TIKTOK",
+        idPlaceholder: "Ingresa tu usuario (@ejemplo)",
+        paquetesTab1: [
+            { monto: "70 Monedas", extra: "Directas", precioUSD: 1.00, active: true },
+            { monto: "210 Monedas", extra: "Directas", precioUSD: 2.90 },
+            { monto: "630 Monedas", extra: "Directas", precioUSD: 8.50 },
+            { monto: "1190 Monedas", extra: "Directas", precioUSD: 15.99 }
+        ],
+        paquetesTab2: [
+            { monto: "1190 Monedas", extra: "Directas", precioUSD: 15.99 }
+        ]
+    },
+    "estrellas telegram": {
+        categoria: "otros",
+        tab1Nombre: "Estrellas & Premium",
+        tab2Nombre: "Suscripción",
+        idLabel: "USUARIO DE TELEGRAM",
+        idPlaceholder: "Ingresa tu usuario (@ejemplo)",
+        paquetesTab1: [
+            { monto: "100 Estrellas", extra: "Telegram", precioUSD: 2.60, active: true },
+            { monto: "250 Estrellas", extra: "Telegram", precioUSD: 6.25 },
+            { monto: "500 Estrellas", extra: "Telegram", precioUSD: 12.40 },
+            { monto: "Telegram Premium", extra: "Suscripción", precioUSD: 7.50 }
+        ],
+        paquetesTab2: [
+            { monto: "Telegram Premium", extra: "Suscripción", precioUSD: 7.50 }
+        ]
+    },
+    "netflix": {
+        categoria: "streaming",
+        tab1Nombre: "Planes Principales",
+        tab2Nombre: "Cuentas",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Con código de Viaje", precioUSD: 4.00, active: true },
+            { monto: "1 Pantalla", extra: "Personalizada", precioUSD: 5.00 },
+            { monto: "Cuenta Completa", extra: "Acceso Total", precioUSD: 14.99 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "Ilimitada", precioUSD: 14.99 }
+        ]
+    },
+    "disney+ premium": {
+        categoria: "streaming",
+        tab1Nombre: "Planes Pantallas",
+        tab2Nombre: "Cuentas Completa",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "ESPN Incluido", precioUSD: 3.50, active: true },
+            { monto: "Cuenta Completa", extra: "Multipantalla", precioUSD: 15.00 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "4K UHD", precioUSD: 15.00 }
+        ]
+    },
+    "prime video": {
+        categoria: "streaming",
+        tab1Nombre: "Opciones de Pantalla",
+        tab2Nombre: "Cuenta Completa",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Full HD", precioUSD: 1.40, active: true },
+            { monto: "Cuenta Completa", extra: "3 Dispositivos", precioUSD: 5.00 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "Privada", precioUSD: 5.00 }
+        ]
+    },
+    "hbo max standar": {
+        categoria: "streaming",
+        tab1Nombre: "Pantallas",
+        tab2Nombre: "Cuentas",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Standar", precioUSD: 2.00, active: true },
+            { monto: "Cuenta Completa", extra: "4K Standar", precioUSD: 5.50 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "Privada", precioUSD: 5.50 }
+        ]
+    },
+    "crunchyroll": {
+        categoria: "streaming",
+        tab1Nombre: "Mega Fan",
+        tab2Nombre: "Cuenta Completa",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Mega Fan", precioUSD: 1.20, active: true },
+            { monto: "Cuenta Completa", extra: "4 Pantallas", precioUSD: 5.00 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "Anual / Mensual", precioUSD: 5.00 }
+        ]
+    },
+    "paramount+": {
+        categoria: "streaming",
+        tab1Nombre: "Planes",
+        tab2Nombre: "Cuentas",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Full HD", precioUSD: 2.00, active: true },
+            { monto: "Cuenta Completa", extra: "Privada", precioUSD: 5.50 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "VIP", precioUSD: 5.50 }
+        ]
+    },
+    "vix": {
+        categoria: "streaming",
+        tab1Nombre: "Planes Premium",
+        tab2Nombre: "Cuentas",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Deportes & Novelas", precioUSD: 1.20, active: true },
+            { monto: "Cuenta Completa", extra: "Full Pass", precioUSD: 4.50 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "Privada", precioUSD: 4.50 }
+        ]
+    },
+    "appletv": {
+        categoria: "streaming",
+        tab1Nombre: "Opciones de Servicio",
+        tab2Nombre: "Cuentas",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Apple Originals", precioUSD: 1.50, active: true },
+            { monto: "Cuenta Completa", extra: "Acceso Total", precioUSD: 4.50 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "Original", precioUSD: 4.50 }
+        ]
+    },
+    "universal+": {
+        categoria: "streaming",
+        tab1Nombre: "Planes",
+        tab2Nombre: "Cuentas",
+        idLabel: "NOMBRE PARA LA PANTALLA",
+        idPlaceholder: "Ingresa el nombre para tu pantalla",
+        paquetesTab1: [
+            { monto: "1 Pantalla", extra: "Universal Channels", precioUSD: 1.50, active: true },
+            { monto: "Cuenta Completa", extra: "HD", precioUSD: 5.00 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Completa", extra: "Privada", precioUSD: 5.00 }
+        ]
+    },
+    "spotify premium": {
+        categoria: "musica",
+        tab1Nombre: "Suscripción a tu correo",
+        tab2Nombre: "Planes Largos",
+        idLabel: "CORREO DE TU CUENTA SPOTIFY",
+        idPlaceholder: "Ingresa el correo de tu cuenta Spotify",
+        paquetesTab1: [
+            { monto: "A tu correo", extra: "1 Mes", precioUSD: 5.00, active: true },
+            { monto: "A tu correo", extra: "3 Meses", precioUSD: 15.00 }
+        ],
+        paquetesTab2: [
+            { monto: "A tu correo", extra: "3 Meses", precioUSD: 15.00 }
+        ]
+    },
+    "youtube premium": {
+        categoria: "musica",
+        tab1Nombre: "Individual",
+        tab2Nombre: "Renovable",
+        idLabel: "CORREO DE TU CUENTA YOUTUBE",
+        idPlaceholder: "Tu correo para invitarte al plan",
+        paquetesTab1: [
+            { monto: "1 Mes", extra: "Renovable", precioUSD: 4.00, active: true }
+        ],
+        paquetesTab2: [
+            { monto: "1 Mes", extra: "Renovable", precioUSD: 4.00 }
+        ]
+    },
+    "capcut": {
+        categoria: "herramientas",
+        tab1Nombre: "Planes Pro",
+        tab2Nombre: "Suscripción",
+        idLabel: "CORREO DE CONTACTO",
+        idPlaceholder: "Tu correo electrónico",
+        paquetesTab1: [
+            { monto: "1 Mes", extra: "No Renovable", precioUSD: 6.50, active: true }
+        ],
+        paquetesTab2: [
+            { monto: "1 Mes", extra: "No Renovable", precioUSD: 6.50 }
+        ]
+    },
+    "streamix tv": {
+        categoria: "iptv",
+        tab1Nombre: "Suscripciones IPTV",
+        tab2Nombre: "Ofertas Especiales",
+        idLabel: "NOMBRE O DISPOSITIVO",
+        idPlaceholder: "Ej: Smart TV / Mi Nombre",
+        paquetesTab1: [
+            { monto: "1 Mes de Servicio", extra: "1800+ Canales", precioUSD: 2.50, active: true },
+            { monto: "3 Meses", extra: "Oferta", precioUSD: 6.00 },
+            { monto: "6 Meses", extra: "Ahorro", precioUSD: 9.50 },
+            { monto: "12 Meses", extra: "Anual VIP", precioUSD: 14.50 }
+        ],
+        paquetesTab2: [
+            { monto: "3 Meses", extra: "Oferta", precioUSD: 6.00 },
+            { monto: "12 Meses", extra: "VIP", precioUSD: 14.50 }
+        ]
+    },
+    "flujotv": {
+        categoria: "iptv",
+        tab1Nombre: "Planes FlujoTV",
+        tab2Nombre: "Promociones Extra",
+        idLabel: "NOMBRE O DISPOSITIVO",
+        idPlaceholder: "Ej: Firestick / Mi Nombre",
+        paquetesTab1: [
+            { monto: "1 Mes de Servicio", extra: "Estándar", precioUSD: 3.00, active: true },
+            { monto: "3 Meses", extra: "Pack", precioUSD: 8.00 },
+            { monto: "6 Meses + 1", extra: "Bonus +1 Mes", precioUSD: 17.00 },
+            { monto: "12 Meses + 2", extra: "Bonus +2 Meses", precioUSD: 36.00 }
+        ],
+        paquetesTab2: [
+            { monto: "6 Meses + 1", extra: "Combo", precioUSD: 17.00 },
+            { monto: "12 Meses + 2", extra: "Anual Mega", precioUSD: 36.00 }
+        ]
+    },
+    "canva pro edu": {
+        categoria: "herramientas",
+        tab1Nombre: "Planes a tu Correo",
+        tab2Nombre: "Suscripciones Anuales",
+        idLabel: "CORREO DE TU CUENTA CANVA",
+        idPlaceholder: "Correo donde recibirás la invitación Pro",
+        paquetesTab1: [
+            { monto: "Cuenta Pro", extra: "1 Mes A tu correo", precioUSD: 1.50, active: true },
+            { monto: "Cuenta Pro", extra: "3 Meses A tu correo", precioUSD: 3.00 },
+            { monto: "Cuenta Pro", extra: "6 Meses A tu correo", precioUSD: 5.50 },
+            { monto: "Cuenta Pro", extra: "12 Meses A tu correo", precioUSD: 10.00 }
+        ],
+        paquetesTab2: [
+            { monto: "Cuenta Pro", extra: "12 Meses A tu correo", precioUSD: 10.00 }
+        ]
+    },
+    "free fire": {
+        categoria: "juegos",
+        tab1Nombre: "Diamantes",
+        tab2Nombre: "Paquetes",
+        idLabel: "ID DEL JUGADOR / CORREO DE LA CUENTA",
+        idPlaceholder: "Ingresa tu ID o Correo",
+        paquetesTab1: [
+            { monto: "100", extra: "+ 10 Extra", precioUSD: 1.00, active: true },
+            { monto: "310", extra: "+ 31 Extra", precioUSD: 2.90 },
+            { monto: "520", extra: "+ 52 Extra", precioUSD: 4.80 },
+            { monto: "1060", extra: "+ 106 Extra", precioUSD: 9.50 },
+            { monto: "2180", extra: "+ 218 Extra", precioUSD: 18.99 },
+            { monto: "5600", extra: "+ 560 Extra", precioUSD: 47.99 }
+        ],
+        paquetesTab2: [
+            { monto: "Pase Semanal", extra: "VIP", precioUSD: 2.20 },
+            { monto: "Pase Mensual", extra: "Top", precioUSD: 8.50 }
+        ]
+    },
+    "blood strike": {
+        categoria: "juegos",
+        tab1Nombre: "Oro / Pases",
+        tab2Nombre: "Paquetes",
+        idLabel: "ID DEL JUGADOR / CORREO DE LA CUENTA",
+        idPlaceholder: "Ingresa tu ID o Correo",
+        paquetesTab1: [
+            { monto: "100 Oro", extra: "Básico", precioUSD: 1.20, active: true },
+            { monto: "500 Oro", extra: "Extra", precioUSD: 5.50 }
+        ],
+        paquetesTab2: [
+            { monto: "Pase de Batalla", extra: "Pro", precioUSD: 6.00 }
+        ]
+    },
+    "mobile legends": {
+        categoria: "juegos",
+        tab1Nombre: "Diamantes",
+        tab2Nombre: "Pases",
+        idLabel: "ID DEL JUGADOR / CORREO DE LA CUENTA",
+        idPlaceholder: "Ingresa tu ID o Correo",
+        paquetesTab1: [
+            { monto: "86 Diamantes", extra: "Fast", precioUSD: 1.50, active: true },
+            { monto: "257 Diamantes", extra: "Pack", precioUSD: 4.20 }
+        ],
+        paquetesTab2: [
+            { monto: "Pase Semanal", extra: "Bonus", precioUSD: 2.20 }
+        ]
+    },
+    "call of duty mobile": {
         categoria: "juegos",
         tab1Nombre: "CP Points",
         tab2Nombre: "Pases",
@@ -1682,36 +1697,38 @@
         idPlaceholder: "Ingresa tu ID o Correo",
         paquetesTab1: [
             { monto: "80 CP", extra: "Normal", precioUSD: 1.20, active: true },
-            { monto: "160 CP", extra: "Mega", precioUSD: 2.40 },
-            { monto: "240 CP", extra: "Popular", precioUSD: 3.60 },
-            { monto: "320 CP", extra: "Pro", precioUSD: 4.80 },
-            { monto: "420 CP", extra: "Elite", precioUSD: 6.03 },
-            { monto: "880 CP", extra: "Master", precioUSD: 12.06 },
-            { monto: "2400 CP", extra: "Legendario", precioUSD: 30.20 }
+            { monto: "420 CP", extra: "Mega", precioUSD: 5.80 },
+            { monto: "880 CP", extra: "Popular", precioUSD: 11.50 },
+            { monto: "2400 CP", extra: "Pro", precioUSD: 29.99 },
+            { monto: "5000 CP", extra: "Elite", precioUSD: 59.99 },
+            { monto: "10800 CP", extra: "Master", precioUSD: 119.99 },
+            { monto: "20000 CP", extra: "Legendario", precioUSD: 219.99 }
         ],
         paquetesTab2: [
-            { monto: "Pase Premium", extra: "Pase", precioUSD: 3.60 },
+            { monto: "Pase Premium", extra: "Pase", precioUSD: 7.00 },
+            { monto: "Pase Premium Plus", extra: "Lote", precioUSD: 14.00 }
         ]
-            },
-           "roblox": {
+    },
+    "roblox": {
         categoria: "juegos",
         tab1Nombre: "Robux",
         tab2Nombre: "Tarjetas",
         idLabel: "ID DEL JUGADOR / CORREO DE LA CUENTA",
         idPlaceholder: "Ingresa tu ID o Correo",
         paquetesTab1: [
-            { monto: "80 Robux", extra: "Directo", precioUSD: 1.20, active: true },
-            { monto: "270 Robux", extra: "Pack", precioUSD: 3.99 },
-            { monto: "500 Robux", extra: "Popular", precioUSD: 6.10 },
-            { monto: "1000 Robux", extra: "Pro", precioUSD: 12.00 },
-            { monto: "2000 Robux", extra: "Elite", precioUSD: 23.90 },
-            { monto: "5250 Robux", extra: "Master", precioUSD: 59.99 }
+            { monto: "80 Robux", extra: "Directo", precioUSD: 1.30, active: true },
+            { monto: "400 Robux", extra: "Pack", precioUSD: 5.50 },
+            { monto: "800 Robux", extra: "Popular", precioUSD: 10.00 },
+            { monto: "1700 Robux", extra: "Pro", precioUSD: 20.00 },
+            { monto: "4500 Robux", extra: "Elite", precioUSD: 50.00 },
+            { monto: "10000 Robux", extra: "Master", precioUSD: 100.00 }
         ],
         paquetesTab2: [
-            { monto: "Gift Card $10", extra: "Código", precioUSD: 00.00 },
-                ]
-            }
-        };
+            { monto: "Gift Card $10", extra: "Código", precioUSD: 10.50 },
+            { monto: "Gift Card $25", extra: "Código", precioUSD: 26.00 }
+        ]
+    }
+};
 
         const baseDeDatosPreciosDistri = {
             "netflix": {
@@ -2095,10 +2112,9 @@
             return true;
         }
 		
-		// ==================== CONTROL DE STOCK / INVENTARIO GENERAL ====================
-// Cambia cualquier valor a 0 para mostrar la tarjeta automáticamente como AGOTADO.
+		// ==================== CONTROL DE STOCK / INVENTARIO ====================
+// Cambia a 0 para mostrar la tarjeta automáticamente como AGOTADO.
 const CONTROL_DE_STOCK = {
-    // --- Streaming & Cines ---
     "netflix": 5,
     "disney+ premium": 0,
     "prime video": 10,
@@ -2106,32 +2122,22 @@ const CONTROL_DE_STOCK = {
     "crunchyroll": 3,
     "paramount+": 5,
     "vix": 8,
-    "appletv": 0,
-    "universal+": 0,
-
-    // --- TV en Vivo & IPTV ---
+    "appletv": 4,
+    "universal+": 6,
     "streamix tv": 15,
     "flujotv": 12,
-
-    // --- Música sin Anuncios ---
     "spotify premium": 20,
     "youtube premium": 15,
-
-    // --- IA & Herramientas de Diseño ---
     "canva pro edu": 50,
     "capcut": 10,
-
-    // --- Otros Servicios (Almacenamiento y Pines) ---
     "google one": 8,
     "monedas tiktok": 100,
     "estrellas telegram": 50,
-
-    // --- Juegos de Recarga ---
     "free fire": 100,
     "blood strike": 40,
     "mobile legends": 25,
-    "call of duty mobile": 0,
-    "roblox": 10
+    "call of duty mobile": 30,
+    "roblox": 0
 };
 
         function seleccionarMetodoMetodo(metodo) {
